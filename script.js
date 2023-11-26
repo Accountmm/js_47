@@ -22,8 +22,8 @@ window.addEventListener('mousemove', function move(e) {
     eyes.forEach(eye => {
         let speed = eye.getAttribute(`speed`)
         console.log(speed);
-        let x = (window.innerWidth - e.pageX * speed) / 60;
-        let y = (window.innerHeight - e.pageY * speed) / 60;
+        let x = (window.innerWidth - e.pageX * speed) / 90;
+        let y = (window.innerHeight - e.pageY * speed) / 70;
 
         eye.style.transform = `translate(${-x}px, ${-y}px)`;
         console.log((e.pageX / 2)-  e.pageX);
